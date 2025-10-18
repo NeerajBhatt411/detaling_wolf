@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailing Wolf - Premium Car Detailing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f9fafb;
+      }
+      .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://lh3.googleusercontent.com/p/AF1QipOh0hGSuZTIvRsTN6hJXc3kKlnFa6mbGhnH-7fv=s1360-w1360-h1020-rw");
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+      }
+      .navbar-bg {
+        background-color: #1a202c;
+      }
+      .footer-bg {
+        background-color: #1a202c;
+      }
+      .btn-premium {
+        background-color: #d4a017;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+      .btn-premium:hover {
+        background-color: #c79100;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar-bg text-white">
+      <div
+        class="container mx-auto flex justify-between items-center p-4 md:p-6"
+      >
+        <a href="index.html" class="text-2xl md:text-3xl font-bold"
+          >Detailing Wolf</a
+        >
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6 items-center">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li>
+            <a href="services.html" class="hover:text-yellow-400">Services</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-yellow-400">Gallery</a>
+          </li>
+          <li>
+            <a href="booking.html" class="hover:text-yellow-400">Book Now</a>
+          </li>
+          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+          <li>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-black-bg text-white">
+        <ul class="flex flex-col space-y-4 p-4">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li>
+            <a href="services.html" class="hover:text-yellow-400">Services</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-yellow-400">Gallery</a>
+          </li>
+          <li>
+            <a href="booking.html" class="hover:text-yellow-400">Book Now</a>
+          </li>
+          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+          <li>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero-bg flex items-center justify-center text-center text-white px-4"
+    >
+      <div class="space-y-6 md:space-y-10">
+        <h1 class="text-4xl md:text-5xl font-bold">Detailing Wolf</h1>
+        <p class="text-lg md:text-xl">Where Every Car Drives with Perfection</p>
+        <a
+          href="https://wa.me/+919639990111"
+          target="_blank"
+          class="btn-premium mt-6 inline-block"
+          >Contact Now</a
+        >
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-16">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          Our Premium Services
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <img
+              src="https://images.unsplash.com/photo-1621358840731-44d8a7193cac"
+              alt="PPF Service"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-2xl font-semibold mt-4">
+              Paint Protection Film (PPF)
+            </h3>
+            <p class="mt-2 text-gray-600 flex-grow">
+              Protect your car's paint from scratches, chips, and UV damage with
+              our premium PPF solutions.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <img
+              src="https://images.unsplash.com/photo-1618843473803-4e605bf3e5f3"
+              alt="Ceramic Coating"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-2xl font-semibold mt-4">Ceramic Coating</h3>
+            <p class="mt-2 text-gray-600 flex-grow">
+              Get a glossy, hydrophobic finish that lasts for years with our
+              ceramic coating.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <img
+              src="https://images.unsplash.com/photo-1593944325295-873c27b979d8"
+              alt="Foam Wash"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-2xl font-semibold mt-4">Foam Wash</h3>
+            <p class="mt-2 text-gray-600 flex-grow">
+              Deep clean your car with thick foam for a spotless and shiny
+              exterior.
+            </p>
+          </div>
+        </div>
+        <a href="services.html" class="btn-premium mt-12 inline-block"
+          >Explore All Services</a
+        >
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          What Our Customers Say
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <p class="italic text-gray-600 flex-grow">
+              "Detailing Wolf transformed my car! The PPF is flawless!"
+            </p>
+            <p class="mt-4 font-semibold">— John Doe</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <p class="italic text-gray-600 flex-grow">
+              "Best ceramic coating service I’ve ever tried!"
+            </p>
+            <p class="mt-4 font-semibold">— Jane Smith</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+            <p class="italic text-gray-600 flex-grow">
+              "Super professional team, highly recommend!"
+            </p>
+            <p class="mt-4 font-semibold">— Mike Wilson</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-black-bg text-white text-center px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Transform Your Car?
+        </h2>
+        <p class="mb-6 text-gray-300">
+          Contact us today for a free quote or book your appointment!
+        </p>
+        <a
+          href="https://wa.me/+919639990111"
+          target="_blank"
+          class="btn-premium mt-6 inline-block"
+          >Contact Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-12 text-center px-4">
+      <div class="container mx-auto space-y-4">
+        <p class="text-xl font-semibold">Detailing Wolf</p>
+        <p>In front of Bosch, Doraha Bazpur, Harlalpur, Uttarakhand 262401</p>
+        <p>
+          Phone:
+          <a href="tel:+919639990111" class="hover:text-yellow-400"
+            >+91 96399 90111</a
+          >
+        </p>
+        <div class="flex justify-center space-x-6">
+          <a
+            href="https://www.instagram.com/detailing_wolf_/"
+            target="_blank"
+            class="hover:text-yellow-400"
+            >Instagram</a
+          >
+          <a href="#" class="hover:text-yellow-400">Facebook</a>
+          <a href="#" class="hover:text-yellow-400">Twitter</a>
+        </div>
+        <p>&copy; 2025 Detailing Wolf. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
